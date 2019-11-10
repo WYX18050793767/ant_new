@@ -26,6 +26,7 @@ return array(
 	    'alliance_album_details_m/:album_id/:p'=>'Home/Mobile/alliance_album_details',
 	    'business_m'      =>  'Home/Mobile/business',
 	    'team_m'          =>  'Home/Mobile/team',
+	    'aboutus_m'         =>  'Home/Mobile/aboutus',
 	    'cooperation_m'   =>  'Home/Mobile/cooperation',
 	    'councils_m'      =>  'Home/Mobile/council',
 	    'recruit_m'       =>  'Home/Mobile/recruit',

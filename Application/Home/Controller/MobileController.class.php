@@ -17,27 +17,6 @@ class MobileController extends SiteController {
     //首页
     public function index(){
         
-        $where_b['status']=1;
-        $bannerMod=D('Admin/Banner');
-        $bannerList=$bannerMod->loadList($where_b);
-        $bannerArr=array();
-        
-        foreach($bannerList as $val){
-            $bannerArr[]=C('cdnurl').$val['url'];
-        }
-        
-        $banner_num=sizeof($bannerArr);
-        
-        $bannerArr=json_encode($bannerArr);
-        
-        $where_v['status']=1;
-        $videoMod=D('Admin/Video');
-        $videoList=$videoMod->loadList($where_v);
-        
-        $this->assign('banner_num',$banner_num);
-        $this->assign('bannerArr',$bannerArr);
-        
-        $this->assign('video_list',$videoList);
         $this -> siteDisplay('index');
     }
     
@@ -182,10 +161,10 @@ class MobileController extends SiteController {
         $this -> siteDisplay('team');
     }
     
-    //商务合作
-    public function cooperation(){
+    //关于我们
+    public function aboutus(){
 
-        $this -> siteDisplay('cooperation');
+        $this -> siteDisplay('aboutus');
     }
     
     //理事单位
