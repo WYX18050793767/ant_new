@@ -35,7 +35,9 @@
     height: 80px;
     text-align: center;
 }
-
+.wrap .wrapper{
+    margin-top: 100px;
+}
 
 .service-types{
     width: 100%;
@@ -43,6 +45,9 @@
     background: white;
     text-align: center;
     clear: both;
+    overflow: hidden;
+    z-index: 999;
+    position: relative;
 }
 .Tiele-service-img{
     margin-top:60px;
@@ -455,6 +460,10 @@
     font-size: 18px;
     font-weight: bold;
     display: none;
+}
+.QR-Code img{
+    width: 135px;
+    height: 135px;
 }
 .Cooperative-partner-box{
     width: 1200px;
